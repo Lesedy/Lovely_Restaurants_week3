@@ -4,7 +4,7 @@ import pg from 'pg';
 const { Pool } = pg;
 
 if (!process.env.DATABASE_URL) {
-  console.error('Missing DATABASE_URL. Copy .env.example to .env and configure your database.');
+  console.error('Missing DATABASE_URL. and configure your database.');
   process.exit(1);
 }
 const pool = new Pool({
